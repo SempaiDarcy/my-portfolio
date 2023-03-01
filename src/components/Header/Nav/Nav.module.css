@@ -5,3 +5,38 @@
     justify-content: space-evenly;
     margin-right: 50px;
 }
+@media(max-width: 992px) {
+    .nav{
+        display: flex;
+    }
+}
+@media(max-width: 767px) {
+    .nav{
+        display: none;
+    }
+    .menuBurger {
+        display: block;
+        width: 50px;
+        height: 8px;
+        background-color: white;
+        position: relative;
+    }
+    .menuBurger::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 8px;
+        background-color: white;
+        top: 20px;
+    }
+    .menuBurger::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 8px;
+        background-color: white;
+        bottom: 20px;
+    }
+}
