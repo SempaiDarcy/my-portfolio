@@ -1,42 +1,39 @@
 .nav {
-    border: 1px solid red;
     display: flex;
-    width: 300px;
-    justify-content: space-evenly;
-    margin-right: 50px;
+    justify-content: space-between;
+    width: 40rem;
+    padding: 5rem;
 }
-@media(max-width: 992px) {
-    .nav{
+.nav a {
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 0.5px;
+    color: #000;
+    text-decoration: none;
+    transition: transform .3s ease;
+}
+.nav a:hover {
+    font-weight: 600;
+    /*font-size: 2rem;*/
+    line-height: 3rem;
+    letter-spacing: 0.1rem;
+    color: gold;
+    text-decoration: none;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.mobileNavigation {
+    display: none;
+}
+@media (max-width: 830px) {
+    .mobileNavigation {
         display: flex;
+        position: absolute;
+        right: 2.5rem;
+        top: 2.9rem;
+        cursor: pointer;
     }
-}
-@media(max-width: 767px) {
-    .nav{
+    .nav {
         display: none;
-    }
-    .menuBurger {
-        display: block;
-        width: 50px;
-        height: 8px;
-        background-color: white;
-        position: relative;
-    }
-    .menuBurger::before {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 50px;
-        height: 8px;
-        background-color: white;
-        top: 20px;
-    }
-    .menuBurger::after {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 50px;
-        height: 8px;
-        background-color: white;
-        bottom: 20px;
     }
 }

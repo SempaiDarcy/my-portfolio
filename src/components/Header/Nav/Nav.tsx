@@ -1,18 +1,21 @@
-import React from 'react';
+import React, {FC, useState} from 'react';
 import s from './Nav.module.css'
+import Hamburger from 'hamburger-react'
 
-const Nav = () => {
+type NavbarProps = {
+    handleOpen:()=>void
+}
+const Nav:FC<NavbarProps> = ({handleOpen}) => {
     return (
         <>
             <div className={s.nav}>
-                <a>Главная</a>
-                <a>Скиллы</a>
-                <a>Проекты</a>
-                <a>Контакты</a>
+                <a>Home</a>
+                <a>Skills</a>
+                <a>Projects</a>
+                <a>Contacts</a>
             </div>
-            <span className={s.menuBurger}></span>
+            <div className={s.mobileNavigation} onClick={handleOpen}><Hamburger size={40} color="gold"/></div>
         </>
-
     );
 };
 
