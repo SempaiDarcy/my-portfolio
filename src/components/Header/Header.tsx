@@ -1,16 +1,14 @@
 import {FC} from 'react';
 import s from './Header.module.css'
-import Nav from "./Nav/Nav";
+import Nav from "../Nav/Nav";
 
-type SidebarProps = {
-    handleOpen:()=>void
-}
-export const Header: FC<SidebarProps> = ({handleOpen}) => {
+
+export const Header: FC = () => {
     return (
         <header className={s.header}>
             <div className={s.desktopNavigation}>
                 <div className={s.logo}>WEB</div>
-                <Nav handleOpen={handleOpen}/>
+                <Nav/>
             </div>
         </header>
     );

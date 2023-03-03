@@ -1,11 +1,9 @@
-import React, {FC, useState} from 'react';
+import React, {FC} from 'react';
 import s from './Nav.module.css'
 import Hamburger from 'hamburger-react'
 
-type NavbarProps = {
-    handleOpen:()=>void
-}
-const Nav:FC<NavbarProps> = ({handleOpen}) => {
+
+const Nav:FC = () => {
     return (
         <>
             <div className={s.nav}>
@@ -14,7 +12,9 @@ const Nav:FC<NavbarProps> = ({handleOpen}) => {
                 <a>Projects</a>
                 <a>Contacts</a>
             </div>
-            <div className={s.mobileNavigation} onClick={handleOpen}><Hamburger size={40} color="gold"/></div>
+            <div className={s.mobileNavigation}>
+                <Hamburger size={40} color="gold"/>
+            </div>
         </>
     );
 };
