@@ -1,0 +1,21 @@
+.App {
+  height: 100vh;
+  .sections {
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: lightcoral;
+    position: relative;
+    top: 70px;
+    scroll-behavior: smooth;//прокрутка будет плавной
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;// для firefox
+    &::-webkit-scrollbar{
+      display: none;
+    }//для остальных браузеров
+    > * {
+      width: 100%;
+      height: calc(100vh - 70px);
+      scroll-snap-align:start ;
+    }
+  }
+}
