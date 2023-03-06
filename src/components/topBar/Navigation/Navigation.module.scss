@@ -1,0 +1,33 @@
+@import '../../../accets/style/sass/variables';
+
+.nav {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+}
+a {
+  color:lightgoldenrodyellow;
+  text-transform: capitalize;
+  position: relative;
+
+  &:hover {
+    color: gold;
+
+    &::before {
+      width: 100%;
+    }
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: gold; ;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    bottom: 0;
+  }
+}
