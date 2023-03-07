@@ -9,6 +9,7 @@
     .icon {
         font-size: 20px;
         color: lightgoldenrodyellow;
+        cursor: pointer;
         &:hover {
             color: $mainColor ;
             transform: translateY(-5px);
