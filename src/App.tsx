@@ -10,7 +10,7 @@ import {Contact} from "./components/contact/Contact";
 function App() {
     return (
         <div className={s.App}>
-            <Topbar/>
+                <Topbar/>
             <div className={s.sections}>
                 <Intro/>
                 <Portfolio/>

@@ -6,7 +6,6 @@
   position: fixed;
   top: 0;
   z-index: 2;
-
 }
 
 .wrapper {
@@ -17,16 +16,17 @@
   .left {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     .logo {
       font-size: 40px;
       font-weight: 700;
       color: $mainColor;
       text-decoration: none;
-      margin-right: 40px;
     }
     .buttonGroup {
       display: flex;
       align-items: center;
+      margin-left: 20px;
     }
   }
   .right {
