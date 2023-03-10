@@ -1,8 +1,9 @@
-
+@import '../accets/style/sass/variables';
+@import '../accets/style/sass/mixins';
 
 .iconsContainer {
     padding: 30px;
-
+    @include positionBlocks(row, space-between, center);
 }
 .logo {
     font-size: 40px;
