@@ -1,0 +1,22 @@
+
+
+.iconsContainer {
+    padding: 30px;
+
+}
+.logo {
+    font-size: 40px;
+    font-weight: 700;
+    color: gold;
+    text-decoration: none;
+    margin-right: 40px;
+}
+.icon {
+    font-size: 20px;
+    color: lightgoldenrodyellow;
+    &:hover {
+        color: gold;
+        transform: translateY(-5px);
+        transition: 0.5s;
+    }
+}
